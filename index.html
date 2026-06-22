@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carré d'Art Déco — L'Art qui embellit votre intérieur</title>
+    <meta
+      name="description"
+      content="Toiles et cadres décoratifs de qualité supérieure. Transformez vos murs en œuvres d'art avec Carré d'Art Déco."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <span class="logo__square"></span>
+          <div class="logo__text">
+            <span class="logo__name">Carré d'Art</span>
+            <span class="logo__tagline">Déco</span>
+          </div>
+        </a>
+
+        <nav class="nav" id="nav">
+          <a href="#collection" class="nav__link">Collection</a>
+          <a href="#avantages" class="nav__link">Avantages</a>
+          <a href="#tarifs" class="nav__link">Tarifs</a>
+          <a href="#temoignages" class="nav__link">Avis</a>
+          <a href="#commande" class="nav__link nav__link--cta">Commander</a>
+        </nav>
+
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="mobile-nav__close" id="mobileClose" aria-label="Fermer">
+        ✕
+      </button>
+      <nav class="mobile-nav__links">
+        <a href="#collection" class="mobile-nav__link">Collection</a>
+        <a href="#avantages" class="mobile-nav__link">Avantages</a>
+        <a href="#tarifs" class="mobile-nav__link">Tarifs</a>
+        <a href="#temoignages" class="mobile-nav__link">Avis</a>
+        <a href="#commande" class="mobile-nav__link mobile-nav__link--cta"
+          >Commander</a
+        >
+      </nav>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Algérie · Art & Décoration</p>
+        <h1 class="hero__title reveal reveal--delay1">
+          Transformez vos murs<br />
+          <em>en œuvres d'art</em>
+        </h1>
+        <p class="hero__sub reveal reveal--delay2">
+          Toiles et cadres décoratifs de qualité supérieure,<br />
+          conçus pour sublimer chaque intérieur.
+        </p>
+        <a href="#collection" class="btn btn--gold reveal reveal--delay3">
+          <span>Découvrir la collection</span>
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+      <a href="#collection" class="hero__scroll" aria-label="Défiler">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       COLLECTION / GALERIE
+  ═══════════════════════════════════════════ -->
+    <section class="section collection" id="collection">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Notre Collection</p>
+          <h2 class="section__title">
+            Toiles &amp; Cadres<br /><em>Signature</em>
+          </h2>
+          <p class="section__desc">
+            Chaque pièce est peinte à la main ou imprimée en haute définition
+            sur toile tendue, pour un rendu exceptionnel dans votre espace.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <article class="card reveal">
+            <div class="card__img-wrap">
+              <img
+                src="img2.jpg"
+                alt="Diptique abstrait noir et blanc — salon moderne"
+                class="card__img"
+                loading="lazy"
+              />
+              <div class="card__overlay">
+                <a href="#commande" class="btn btn--outline-gold">Commander</a>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__theme">Abstrait Minimaliste</p>
+              <h3 class="card__name">Diptique Fluide I</h3>
+              <p class="card__desc">
+                Deux toiles complémentaires aux formes organiques en noir et
+                blanc cassé — parfaites au-dessus d'un canapé.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal reveal--delay1">
+            <div class="card__img-wrap">
+              <img
+                src="img3.jpg"
+                alt="Diptique zébré — lignes dynamiques noir et blanc"
+                class="card__img"
+                loading="lazy"
+              />
+              <div class="card__overlay">
+                <a href="#commande" class="btn btn--outline-gold">Commander</a>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__theme">Géométrie Organique</p>
+              <h3 class="card__name">Diptique Zébré</h3>
+              <p class="card__desc">
+                Lignes ondulantes puissantes en noir profond sur fond ivoire —
+                une présence graphique immédiate.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal reveal--delay2">
+            <div class="card__img-wrap">
+              <img
+                src="img8.jpg"
+                alt="Diptique contraste sombre — tableau décoratif salon"
+                class="card__img"
+                loading="lazy"
+              />
+              <div class="card__overlay">
+                <a href="#commande" class="btn btn--outline-gold">Commander</a>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__theme">Contraste Premium</p>
+              <h3 class="card__name">Diptique Nocturne</h3>
+              <p class="card__desc">
+                Fonds sombres et courbes blanches élancées, pour une atmosphère
+                élégante et sophistiquée.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__img-wrap">
+              <img
+                src="img5.jpg"
+                alt="Toile texturée cellulaire — art contemporain"
+                class="card__img"
+                loading="lazy"
+              />
+              <div class="card__overlay">
+                <a href="#commande" class="btn btn--outline-gold">Commander</a>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__theme">Texture 3D</p>
+              <h3 class="card__name">Diptique Cellulaire</h3>
+              <p class="card__desc">
+                Relief organique et structure alvéolaire en beige et noir — une
+                toile qui crée du volume et de la profondeur.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal reveal--delay1">
+            <div class="card__img-wrap">
+              <img
+                src="img9.jpg"
+                alt="Diptique figuratif minimaliste — formes Matisse"
+                class="card__img"
+                loading="lazy"
+              />
+              <div class="card__overlay">
+                <a href="#commande" class="btn btn--outline-gold">Commander</a>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__theme">Figuratif Épuré</p>
+              <h3 class="card__name">Silhouettes & Nature</h3>
+              <p class="card__desc">
+                Formes inspirées de Matisse — stèles équilibrées et branches
+                organiques dans une palette deux tons intemporelle.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal reveal--delay2">
+            <div class="card__img-wrap">
+              <img
+                src="img4.jpg"
+                alt="Salon complet décoration cadres Carré d'Art Déco"
+                class="card__img"
+                loading="lazy"
+              />
+              <div class="card__overlay">
+                <a href="#commande" class="btn btn--outline-gold">Commander</a>
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__theme">Mise en Scène</p>
+              <h3 class="card__name">Composition Salon</h3>
+              <p class="card__desc">
+                Nos toiles dans leur environnement naturel — un canapé modulaire
+                beige, une lumière architecturale et des œuvres qui fédèrent
+                l'espace.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       AVANTAGES
+  ═══════════════════════════════════════════ -->
+    <section class="section avantages" id="avantages">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Pourquoi nous choisir</p>
+          <h2 class="section__title">
+            L'excellence<br /><em>à chaque étape</em>
+          </h2>
+        </div>
+        <div class="avantages__grid">
+          <div class="avantage reveal">
+            <div class="avantage__icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="avantage__title">Fabrication d'excellence</h3>
+            <p class="avantage__text">
+              Chaque toile est réalisée avec des matériaux sélectionnés —
+              chassis en bois massif, toile épaisse et peintures résistantes au
+              temps.
+            </p>
+          </div>
+
+          <div class="avantage reveal reveal--delay1">
+            <div class="avantage__icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <h3 class="avantage__title">Impression haute définition</h3>
+            <p class="avantage__text">
+              Technologie d'impression UV grand format avec encres longue durée
+              — couleurs vives, contours nets, rendu photographique.
+            </p>
+          </div>
+
+          <div class="avantage reveal reveal--delay2">
+            <div class="avantage__icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+                <rect x="1" y="9" width="4" height="6" rx="1" />
+                <rect x="19" y="9" width="4" height="6" rx="1" />
+              </svg>
+            </div>
+            <h3 class="avantage__title">Livraison sécurisée</h3>
+            <p class="avantage__text">
+              Emballage renforcé anti-choc et livraison rapide partout en
+              Algérie. Vos œuvres arrivent parfaites, prêtes à être accrochées.
+            </p>
+          </div>
+
+          <div class="avantage reveal reveal--delay3">
+            <div class="avantage__icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path d="M4 6h16M4 10h16M4 14h8M4 18h8" />
+                <rect x="14" y="12" width="8" height="8" rx="1" />
+              </svg>
+            </div>
+            <h3 class="avantage__title">Catalogue varié</h3>
+            <p class="avantage__text">
+              Des dizaines de motifs disponibles : abstrait, minimaliste,
+              floral, géométrique, figuratif — et toujours la possibilité de
+              personnaliser.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       TARIFS
+  ═══════════════════════════════════════════ -->
+    <section class="section tarifs" id="tarifs">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Tarifs transparents</p>
+          <h2 class="section__title">Dimensions &amp;<br /><em>Prix</em></h2>
+          <p class="section__desc">
+            Tous nos prix incluent l'impression sur toile tendue sur chassis.
+            Avec ou sans cadre américain, le prix reste identique.
+          </p>
+        </div>
+
+        <!-- ✅ CORRECTION : une seule table centrée -->
+        <div class="tarifs__wrapper reveal">
+          <div class="tarif-table">
+            <div class="tarif-table__header">
+              <div class="tarif-table__icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="1" />
+                </svg>
+              </div>
+              <div>
+                <p class="tarif-table__label">Toile simple</p>
+                <h3 class="tarif-table__name">Dimensions &amp; Prix</h3>
+              </div>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Dimensions (cm)</th>
+                  <th>Prix (DA)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2 cadres</td>
+                  <td>30 × 42</td>
+                  <td class="price">2 700 DA</td>
+                </tr>
+                <tr>
+                  <td>2 cadres</td>
+                  <td>42 × 60</td>
+                  <td class="price">4 000 DA</td>
+                </tr>
+                <tr>
+                  <td>2 cadres</td>
+                  <td>50 × 70</td>
+                  <td class="price">5 000 DA</td>
+                </tr>
+                <tr>
+                  <td>2 cadres</td>
+                  <td>60 × 80</td>
+                  <td class="price">6 500 DA</td>
+                </tr>
+                <tr>
+                  <td>2 cadres</td>
+                  <td>70 × 100</td>
+                  <td class="price">8 500 DA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       TEMOIGNAGES
+  ═══════════════════════════════════════════ -->
+    <section class="section temoignages" id="temoignages">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Ce que disent nos clients</p>
+          <h2 class="section__title">Avis<br /><em>vérifiés</em></h2>
+        </div>
+
+        <div class="temoignages__grid">
+          <div class="temoignage reveal">
+            <div class="temoignage__stars">★★★★★</div>
+            <p class="temoignage__text">
+              " سلام عليكم خويا لحقوني اليوم كاليت توب وخرجو ماشاء الله يعطيكم
+              الصحة ❤️"
+            </p>
+            <div class="temoignage__author">
+              <div class="temoignage__avatar">S.M</div>
+              <div>
+                <p class="temoignage__name">Salima M.</p>
+                <p class="temoignage__city">Alger</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="temoignage reveal reveal--delay1">
+            <div class="temoignage__stars">★★★★★</div>
+            <p class="temoignage__text">
+              "J’ai bien reçu la commande, Tout était très bien organisé et
+              vraiment impeccable. Merci beaucoup pour votre professionnalisme
+              et votre excellent service. Ce ne sera certainement pas la
+              dernière fois que je commande chez vous."
+            </p>
+            <div class="temoignage__author">
+              <div class="temoignage__avatar">K.B</div>
+              <div>
+                <p class="temoignage__name">Karim B.</p>
+                <p class="temoignage__city">Oran</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="temoignage reveal reveal--delay2">
+            <div class="temoignage__stars">★★★★★</div>
+            <p class="temoignage__text">
+              "السلام عليكم ورحمة الله وبركاته Commande reçu vendredi. Merci
+              bcp. Je suis très satisfaite, colis très bien emballé, bien
+              protéger, et qualités des cadres et des images au rendez-vous.
+              Merci bcp"
+            </p>
+            <div class="temoignage__author">
+              <div class="temoignage__avatar">L.H</div>
+              <div>
+                <p class="temoignage__name">Lynda H.</p>
+                <p class="temoignage__city">Constantine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       FORMULAIRE DE COMMANDE
+  ═══════════════════════════════════════════ -->
+    <section class="section commande" id="commande">
+      <div class="container">
+        <div class="commande__inner">
+          <div class="commande__info reveal">
+            <p class="section__eyebrow">Commande &amp; Devis</p>
+            <h2 class="section__title">Passez votre<br /><em>commande</em></h2>
+            <p class="commande__sub">
+              Remplissez le formulaire et nous vous contactons sous 24h pour
+              confirmer votre commande et vous guider dans le choix du motif.
+            </p>
+            <div class="commande__contact-list">
+              <a href="tel:+213549857799" class="commande__contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                  />
+                </svg>
+                +213 549 85 77 99
+              </a>
+            </div>
+          </div>
+
+          <form class="form reveal reveal--delay1" id="orderForm" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="nom"
+                  >Nom <span class="form__req">*</span></label
+                >
+                <input
+                  class="form__input"
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Ex: Benali"
+                  autocomplete="family-name"
+                />
+                <span class="form__error" id="nomError"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="prenom"
+                  >Prénom <span class="form__req">*</span></label
+                >
+                <input
+                  class="form__input"
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  placeholder="Ex: Ahmed"
+                  autocomplete="given-name"
+                />
+                <span class="form__error" id="prenomError"></span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="telephone"
+                  >Téléphone <span class="form__req">*</span></label
+                >
+                <input
+                  class="form__input"
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="Ex: 06 XX XX XX XX"
+                  autocomplete="tel"
+                />
+                <span class="form__error" id="telephoneError"></span>
+              </div>
+              <!-- ✅ CORRECTION : id="wilaya" pour correspondre au script -->
+              <div class="form__group">
+                <label class="form__label" for="wilaya">Wilaya</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="wilaya"
+                  name="wilaya"
+                  placeholder="Votre wilaya"
+                  autocomplete="address-level2"
+                />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="produit">Produit</label>
+                <!-- ✅ CORRECTION : une seule option "Toile simple" -->
+                <select
+                  class="form__input form__select"
+                  id="produit"
+                  name="produit"
+                >
+                  <option value="">Choisir un type</option>
+                  <option value="Toile simple">Toile simple</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="dimension">Dimension</label>
+                <select
+                  class="form__input form__select"
+                  id="dimension"
+                  name="dimension"
+                >
+                  <option value="">Choisir une dimension</option>
+                  <option>30 × 42 cm</option>
+                  <option>42 × 60 cm</option>
+                  <option>50 × 70 cm</option>
+                  <option>60 × 80 cm</option>
+                  <option>70 × 100 cm</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="adresse"
+                >Adresse de livraison</label
+              >
+              <input
+                class="form__input"
+                type="text"
+                id="adresse"
+                name="adresse"
+                placeholder="Votre adresse complète"
+                autocomplete="street-address"
+              />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message"
+                >Message / Motif souhaité</label
+              >
+              <textarea
+                class="form__input form__textarea"
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Décrivez le motif souhaité ou posez vos questions..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn--gold btn--full"
+              id="submitBtn"
+            >
+              <span id="submitText">Envoyer ma commande</span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </button>
+
+            <div class="form__success" id="formSuccess">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+              <p>
+                Votre commande a été envoyée avec succès ! Nous vous contactons
+                très bientôt.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Nous contacter</p>
+          <h2 class="section__title">Restons<br /><em>en contact</em></h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__item reveal">
+            <div class="contact__icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                />
+              </svg>
+            </div>
+            <h3 class="contact__label">Téléphone</h3>
+            <a href="tel:+213549857799" class="contact__value"
+              >+213 549 85 77 99</a
+            >
+          </div>
+
+          <div class="contact__item reveal reveal--delay1">
+            <div class="contact__icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <h3 class="contact__label">Email</h3>
+            <a href="mailto:carredartdeco@gmail.com" class="contact__value"
+              >talhi.kheireddine@gmail.com</a
+            >
+          </div>
+
+          <div class="contact__item reveal reveal--delay2">
+            <div class="contact__icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+            </div>
+            <h3 class="contact__label">Localisation</h3>
+            <p class="contact__value">
+              Constantine - cité el riyadh en face à l'hopital du cœur
+            </p>
+          </div>
+
+          <div class="contact__item reveal reveal--delay3">
+            <div class="contact__icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                />
+              </svg>
+            </div>
+            <h3 class="contact__label">Réseaux sociaux</h3>
+            <div class="contact__socials">
+              <a
+                href="https://www.facebook.com/profile.php?id=100082092986604&locale=fr_FR"
+                target="_blank"
+                rel="noopener"
+                class="contact__social-link"
+                aria-label="Facebook"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                  />
+                </svg>
+                Facebook
+              </a>
+              <a
+                href="https://www.instagram.com/carre.dart.deco/"
+                target="_blank"
+                rel="noopener"
+                class="contact__social-link"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#" class="logo logo--light">
+              <span class="logo__square"></span>
+              <div class="logo__text">
+                <span class="logo__name">Carré d'Art</span>
+                <span class="logo__tagline">Déco</span>
+              </div>
+            </a>
+            <p class="footer__tagline">L'Art qui embellit votre intérieur</p>
+          </div>
+
+          <nav class="footer__nav">
+            <a href="#collection">Collection</a>
+            <a href="#avantages">Avantages</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#temoignages">Avis clients</a>
+            <a href="#commande">Commander</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com/carredartdeco"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/carre.dart.deco/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>© 2025 Carré d'Art Déco · Tous droits réservés</p>
+          <p>Conçu avec passion en Algérie 🇩🇿</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
